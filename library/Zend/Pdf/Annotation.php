@@ -221,10 +221,9 @@ abstract class Zend_Pdf_Annotation
      *
      * @internal
      * @param Zend_Pdf_Element $resource
-     * @return Zend_Pdf_Annotation
+     * @return void
      */
     public static function load(Zend_Pdf_Element $resource)
     {
-        /** @todo implementation */
     }
 }

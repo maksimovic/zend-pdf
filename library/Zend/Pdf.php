@@ -578,8 +578,8 @@ class Zend_Pdf
 
         $outlineDictionary = $root->Outlines->First;
         $processedDictionaries = new SplObjectStorage();
-        while ($outlineDictionary !== null  &&  !$processedDictionaries->contains($outlineDictionary)) {
-            $processedDictionaries->attach($outlineDictionary);
+        while ($outlineDictionary !== null  &&  !$processedDictionaries->offsetExists($outlineDictionary)) {
+            $processedDictionaries->offsetSet($outlineDictionary);
 
             // require_once 'Zend/Pdf/Outline/Loaded.php';
             $this->outlines[] = new Zend_Pdf_Outline_Loaded($outlineDictionary);
@@ -1011,7 +1011,7 @@ class Zend_Pdf
      * @param Zend_Pdf_Target $openAction
      * @returns Zend_Pdf
      */
-    public function setOpenAction(Zend_Pdf_Target $openAction = null)
+    public function setOpenAction(?Zend_Pdf_Target $openAction = null)
     {
         $root = $this->_trailer->Root;
         $root->touch();

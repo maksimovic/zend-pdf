@@ -38,6 +38,54 @@
  * @subpackage FileParser
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @property int $fontType
+ * @property array $names
+ * @property Zend_Pdf_Cmap $cmap
+ * @property array $glyphWidths
+ * @property int $unitsPerEm
+ * @property int $ascent
+ * @property int $descent
+ * @property int $lineGap
+ * @property int $numGlyphs
+ * @property int $numberHMetrics
+ * @property int $metricDataFormat
+ * @property int $fontWeight
+ * @property int $fontWidth
+ * @property int $capitalHeight
+ * @property int $xHeight
+ * @property int $averageCharWidth
+ * @property int $xMin
+ * @property int $xMax
+ * @property int $yMin
+ * @property int $yMax
+ * @property float $italicAngle
+ * @property int $underlinePosition
+ * @property int $underlineThickness
+ * @property int $strikePosition
+ * @property int $strikeThickness
+ * @property int $subscriptXSize
+ * @property int $subscriptYSize
+ * @property int $subscriptXOffset
+ * @property int $subscriptYOffset
+ * @property int $superscriptXSize
+ * @property int $superscriptYSize
+ * @property int $superscriptXOffset
+ * @property int $superscriptYOffset
+ * @property string $vendorID
+ * @property bool $isEmbeddable
+ * @property bool $isSubsettable
+ * @property bool $isBold
+ * @property bool $isItalic
+ * @property bool $isMonospaced
+ * @property bool $isSerifFont
+ * @property bool $isSansSerifFont
+ * @property bool $isOrnamentalFont
+ * @property bool $isScriptFont
+ * @property bool $isSymbolicFont
+ * @property bool $isAdobeLatinSubset
+ * @property bool $baselineAtZero
+ * @property bool $useIntegerScaling
  */
 abstract class Zend_Pdf_FileParser_Font extends Zend_Pdf_FileParser
 {

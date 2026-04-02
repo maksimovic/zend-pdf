@@ -118,11 +118,10 @@ abstract class Zend_Pdf_Resource
      * @internal
      * @param Zend_Pdf_ElementFactory_Interface $factory
      * @param array $processed
-     * @return Zend_Pdf_Page
+     * @return void
      */
     public function cloneResource($factory, &$processed)
     {
-        /** @todo implementation*/
 
 //        // Clone dictionary object.
 //        // Do it explicitly to prevent sharing page attributes between different

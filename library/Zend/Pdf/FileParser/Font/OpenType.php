@@ -885,6 +885,8 @@ abstract class Zend_Pdf_FileParser_Font_OpenType extends Zend_Pdf_FileParser_Fon
         }
 
         $cmapType = -1;
+        $cmapOffset = null;
+        $cmapLength = null;
 
         foreach ($offsets as $offset) {
             $cmapOffset = $baseOffset + $offset;
