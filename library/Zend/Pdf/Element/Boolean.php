@@ -80,4 +80,15 @@ class Zend_Pdf_Element_Boolean extends Zend_Pdf_Element
     {
         return $this->value ? 'true' : 'false';
     }
+
+
+    /**
+     * Convert PDF element to PHP type.
+     *
+     * @return mixed
+     */
+    public function toPhp()
+    {
+        return $this->value;
+    }
 }

@@ -92,4 +92,15 @@ class Zend_Pdf_Element_Numeric extends Zend_Pdf_Element
         }
         return sprintf("%.{$prec}F", $this->value);
     }
+
+
+    /**
+     * Convert PDF element to PHP type.
+     *
+     * @return mixed
+     */
+    public function toPhp()
+    {
+        return $this->value;
+    }
 }

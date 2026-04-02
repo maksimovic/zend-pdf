@@ -127,4 +127,15 @@ class Zend_Pdf_Element_Stream extends Zend_Pdf_Element
     {
         return "stream\n" . $this->value->getRef() . "\nendstream";
     }
+
+
+    /**
+     * Convert PDF element to PHP type.
+     *
+     * @return mixed
+     */
+    public function toPhp()
+    {
+        return $this->value;
+    }
 }

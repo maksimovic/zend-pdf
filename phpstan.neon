@@ -5,6 +5,3 @@ parameters:
     ignoreErrors:
         - identifier: arguments.count
         - message: '#Zend_Pdf_FileParser_Font_OpenType_Type1#'
-        -
-            message: '#Access to an undefined property Zend_Pdf_Element::\$value#'
-            path: library/Zend/Pdf/Element.php

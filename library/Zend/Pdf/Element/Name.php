@@ -158,4 +158,15 @@ class Zend_Pdf_Element_Name extends Zend_Pdf_Element
     {
         return '/' . self::escape((string)$this->value);
     }
+
+
+    /**
+     * Convert PDF element to PHP type.
+     *
+     * @return mixed
+     */
+    public function toPhp()
+    {
+        return $this->value;
+    }
 }
