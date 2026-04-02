@@ -1,21 +1,17 @@
-# zend-pdf (Zend Framework 1)
+# maksimovic/zend-pdf
 
-This package is a part of the Zend Framework 1. Each component was separated and put into its own composer package.
-**PHP 5.3-8.3** compatible.
+A PHP 8.1+ compatible fork of [zf1s/zend-pdf](https://github.com/zf1s/zend-pdf), originally from Zend Framework 1.
 
-- [Report issues](https://github.com/zf1s/zf1/issues) and
-  [send Pull Requests](https://github.com/zf1s/zf1/pulls)
-  in the [main repository](https://github.com/zf1s/zf1)
-- This package can also be found at [Packagist](http://packagist.org/packages/zf1s).
+PDF generation and manipulation library. Create documents, add pages, draw text, shapes, and images (JPEG, PNG, TIFF), embed standard and TrueType fonts, handle bookmarks, form fields, JavaScript, and metadata.
 
 ## Installation
 
-```
-composer require zf1s/zend-pdf
+```bash
+composer require maksimovic/zend-pdf
 ```
 
-## Resources
+This package replaces `zf1/zend-pdf` and `zf1s/zend-pdf`.
 
-- [Main Repository](https://github.com/zf1s/zf1)
-- [Original documentation](https://framework.zend.com/manual/1.12/en/manual.html) 
-- [Changelog](https://github.com/zf1s/zf1/blob/master/CHANGELOG.md)
+## License
+
+BSD-3-Clause
