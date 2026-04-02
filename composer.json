@@ -25,7 +25,8 @@
     },
     "replace": {
         "zf1/zend-pdf": "^1.12",
-        "zf1s/zend-pdf": "^1.12"
+        "zf1s/zend-pdf": "^1.12",
+        "zendframework/zend-pdf": "*"
     },
     "scripts": {
         "test": "phpunit",
