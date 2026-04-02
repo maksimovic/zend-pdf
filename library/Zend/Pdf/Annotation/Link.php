@@ -118,6 +118,8 @@ class Zend_Pdf_Annotation_Link extends Zend_Pdf_Annotation
      */
     public function setDestination($target)
     {
+        $destination = null;
+
         if (is_string($target)) {
             // require_once 'Zend/Pdf/Destination/Named.php';
             $destination = Zend_Pdf_Destination_Named::create($target);

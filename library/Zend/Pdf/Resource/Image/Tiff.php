@@ -215,6 +215,9 @@ class Zend_Pdf_Resource_Image_Tiff extends Zend_Pdf_Resource_Image
 
                 $offsetBytes = fread($imageFile, 4);
 
+                $value = null;
+                $refOffset = null;
+
                 if($fieldLength <= 4) {
                     switch($fieldType) {
                         case Zend_Pdf_Resource_Image_Tiff::TIFF_FIELD_TYPE_BYTE:

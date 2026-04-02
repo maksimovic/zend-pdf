@@ -27,6 +27,9 @@
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
+/**
+ * @property mixed $value
+ */
 abstract class Zend_Pdf_Element
 {
     const TYPE_BOOL        = 1;
@@ -131,10 +134,7 @@ abstract class Zend_Pdf_Element
      *
      * @return mixed
      */
-    public function toPhp()
-    {
-        return $this->value;
-    }
+    abstract public function toPhp();
 
     /**
      * Convert PHP value into PDF element.

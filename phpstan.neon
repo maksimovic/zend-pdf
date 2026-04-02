@@ -1,0 +1,7 @@
+parameters:
+    level: 1
+    paths:
+        - library
+    ignoreErrors:
+        - identifier: arguments.count
+        - message: '#Zend_Pdf_FileParser_Font_OpenType_Type1#'

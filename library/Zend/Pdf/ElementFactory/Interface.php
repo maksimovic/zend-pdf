@@ -90,8 +90,7 @@ interface Zend_Pdf_ElementFactory_Interface
      * Clean enumeration shift cache.
      * Has to be used after PDF render operation to let followed updates be correct.
      *
-     * @param Zend_Pdf_ElementFactory_Interface $factory
-     * @return integer
+     * @return void
      */
     public function cleanEnumerationShiftCache();
 

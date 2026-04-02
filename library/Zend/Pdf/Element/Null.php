@@ -72,4 +72,15 @@ class Zend_Pdf_Element_Null extends Zend_Pdf_Element
     {
         return 'null';
     }
+
+
+    /**
+     * Convert PDF element to PHP type.
+     *
+     * @return mixed
+     */
+    public function toPhp()
+    {
+        return $this->value;
+    }
 }

@@ -149,6 +149,7 @@ class Zend_Pdf_Cmap_SegmentToDelta extends Zend_Pdf_Cmap
              * of segments (there may be hundreds in a large font), we will only
              * need to perform $this->_searchIterations.
              */
+            $subtableIndex = null;
             for ($i = 1; $i <= $this->_searchIterations; $i++) {
                 if ($this->_segmentTableEndCodes[$searchIndex] >= $characterCode) {
                     $subtableIndex = $searchIndex;
@@ -220,6 +221,7 @@ class Zend_Pdf_Cmap_SegmentToDelta extends Zend_Pdf_Cmap
             $searchIndex = $this->_segmentCount;
         }
 
+        $subtableIndex = null;
         for ($i = 1; $i <= $this->_searchIterations; $i++) {
             if ($this->_segmentTableEndCodes[$searchIndex] >= $characterCode) {
                 $subtableIndex = $searchIndex;
